@@ -1,0 +1,164 @@
+
+#main-window[titlepreface*="[NoNav]"] .tabbrowser-tab {
+  visibility: collapse !important;
+}
+ 
+#main-window[titlepreface*="[NoNav]"] .titlebar-button {
+  height: 40px !important;
+}
+ 
+
+#main-window[titlepreface*="[NoNav]"] #nav-bar {
+  margin-top: -40px;
+  margin-right: 137px;
+  box-shadow: none !important;
+}
+
+
+#main-window[titlepreface*="[NoNav]"] #navigator-toolbox {
+	visibility: collapse !important;
+}
+
+
+#main-window[titlepreface*="[NoNav]"] #titlebar-spacer {
+  background-color: var(--chrome-secondary-background-color);
+}
+ 
+#main-window[titlepreface*="[NoNav]"] #titlebar-buttonbox-container {
+  background-color: var(--chrome-secondary-background-color);
+}
+ 
+#main-window[titlepreface*="[NoNav]"] .titlebar-color {
+  background-color: var(--toolbar-bgcolor);
+}
+ 
+#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"] #sidebar-header {
+  visibility: collapse;
+}
+
+
+#navigator-toolbox[inFullscreen] {
+ // visibility: collapse !important;
+}
+
+
+#PanelUI-menu-button.toolbarbutton-1 {
+	margin-left: -760px !important;
+}
+
+
+#nav-bar:not([customizing="true"]):not([inFullscreen]) {
+	min-height: 1px !important;
+	max-height: 40px !important;
+	height: 40px;
+	margin-top: -20px !important;
+	margin-bottom: -20px !important;
+	opacity: 0;
+	transition: all 0ms linear 0s !important;
+	z-index: 1 !important;
+}
+
+#navigator-toolbox:hover:not([inFullscreen]) :-moz-any(#nav-bar),
+#navigator-toolbox:focus-within :-moz-any(#nav-bar) {
+	min-height: 32px !important;
+	max-height: 32px !important;
+	margin-top: 0px !important;
+	margin-bottom: -32px !important;
+	opacity: .5;
+	transition: all 0ms linear 0s !important;
+	z-index: 5 !important;
+}
+
+#nav-bar:not([customizing="true"]) {
+	min-height: 1px !important;
+	max-height: 0px !important;
+	margin-top: 0px !important;
+	margin-bottom: -1px !important;
+	opacity: .5;
+	transition: all 0ms linear 0s !important;
+	z-index: -5 !important;
+}
+
+#navigator-toolbox:hover:-moz-any(#nav-bar),
+#navigator-toolbox:focus-within :-moz-any(#nav-bar) {
+	min-height: 32px !important;
+	max-height: 32px !important;
+	margin-top: 0px !important;
+	margin-bottom: -32px !important;
+	opacity: .5;
+	transition: all 0ms linear 0s !important;
+	z-index: 5 !important;
+}
+
+#navigator-toolbox:focus-within :-moz-any(#nav-bar) {
+	opacity: 1;
+}
+
+
+/* Needed for for FF 75 megabar */
+#urlbar {
+	--urlbar-toolbar-height: 32px !important;
+}
+
+/*
+ * Description: Auto-hide sidebar.
+ *
+ * Contributor(s): img2tab
+ */
+
+/* To right-align the sidebar, replace all occurrences of "left" with "right", and "margin-right" with "margin-left" */
+
+:root {
+  --sidebar-hover-width: 200px;
+  --sidebar-visible-width: 200px;
+}
+
+#sidebar-box {
+  position: relative !important;
+  overflow-x: hidden !important;
+  margin-right: calc(var(--sidebar-hover-width) * -1) !important;
+  //left: var(--sidebar-hover-width) !important;
+
+
+  min-width: var(--sidebar-hover-width) !important;
+  max-width: var(--sidebar-hover-width) !important;
+  border-right: 0px solid var(--sidebar-border-color);
+  z-index: 1;
+}
+
+#sidebar-box:hover {
+  margin-right: calc(var(--sidebar-visible-width) * -1) !important;
+  //left: var(--sidebar-hover-width) !important;
+  min-width: var(--sidebar-visible-width) !important;
+  max-width: var(--sidebar-visible-width) !important;
+//display: none !important;
+}
+
+/*
+#sidebar:not(:hover):after {
+	//opacity: 1 !important;
+//display: none !important;
+}
+*/
+
+/* #sidebar-header is hidden by default, change "none" to "inherit" to restore it. */
+
+#sidebar-header {
+  display: none !important;
+}
+/*
+#sidebar-header:hover {
+  display: none !important;
+}
+
+
+#sidebar-header:not(:hover):after {
+  display: none !important;
+}
+*/
+
+
+/* #sidebar-splitter styles the divider between the sidebar and the rest of the browser. */
+#sidebar-splitter {
+  display: none;
+}
