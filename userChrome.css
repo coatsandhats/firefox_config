@@ -6,51 +6,15 @@ html#main-window body toolbox#navigator-toolbox {
 	order: 3;
 }
 
+html#main-window body toolbox#navigator-toolbox:not([inFullscreen]) {
+order: -1;
+}
+
+
+/*just inspo #toolbar-menubar[autohide="true"][inactive="true"] */
+
 #navigator-toolbox[fullscreenShouldAnimate] {
-	transition: 0.0s margin-top ease-out;
-}
-
-
-#main-window[titlepreface*="[NoNav]"] .tabbrowser-tab {
-  visibility: collapse !important;
-}
- 
-#main-window[titlepreface*="[NoNav]"] .titlebar-button {
-  height: 40px !important;
-}
- 
-
-#main-window[titlepreface*="[NoNav]"] #nav-bar {
-  margin-top: -40px;
-  margin-right: 137px;
-  box-shadow: none !important;
-}
-
-
-#main-window[titlepreface*="[NoNav]"] #navigator-toolbox {
-	visibility: collapse !important;
-}
-
-
-#main-window[titlepreface*="[NoNav]"] #titlebar-spacer {
-  background-color: var(--chrome-secondary-background-color);
-}
- 
-#main-window[titlepreface*="[NoNav]"] #titlebar-buttonbox-container {
-  background-color: var(--chrome-secondary-background-color);
-}
- 
-#main-window[titlepreface*="[NoNav]"] .titlebar-color {
-  background-color: var(--toolbar-bgcolor);
-}
- 
-#sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"] #sidebar-header {
-  visibility: collapse;
-}
-
-
-#navigator-toolbox[inFullscreen] {
-  //visibility: collapse !important;
+	transition: 0.0s margin-top ease-out !important;
 }
 
 
