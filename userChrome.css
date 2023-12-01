@@ -1,3 +1,7 @@
+html#main-window body toolbox#navigator-toolbox vbox#titlebar toolbar#TabsToolbar.browser-toolbar.titlebar-color hbox.titlebar-buttonbox-container {
+	display:none !important;
+}
+
 
 #main-window[titlepreface*="[NoNav]"] .tabbrowser-tab {
   visibility: collapse !important;
@@ -38,7 +42,7 @@
 
 
 #navigator-toolbox[inFullscreen] {
- // visibility: collapse !important;
+  visibility: collapse !important;
 }
 
 
