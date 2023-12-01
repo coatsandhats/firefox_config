@@ -2,6 +2,14 @@ html#main-window body toolbox#navigator-toolbox vbox#titlebar toolbar#TabsToolba
 	display:none !important;
 }
 
+html#main-window body toolbox#navigator-toolbox {
+	order: 3;
+}
+
+#navigator-toolbox[fullscreenShouldAnimate] {
+	transition: 0.0s margin-top ease-out;
+}
+
 
 #main-window[titlepreface*="[NoNav]"] .tabbrowser-tab {
   visibility: collapse !important;
@@ -42,7 +50,7 @@ html#main-window body toolbox#navigator-toolbox vbox#titlebar toolbar#TabsToolba
 
 
 #navigator-toolbox[inFullscreen] {
-  visibility: collapse !important;
+  //visibility: collapse !important;
 }
 
 
@@ -73,14 +81,25 @@ html#main-window body toolbox#navigator-toolbox vbox#titlebar toolbar#TabsToolba
 	z-index: 5 !important;
 }
 
+
 #nav-bar:not([customizing="true"]) {
-	min-height: 1px !important;
-	max-height: 0px !important;
+	min-height: 32px !important;
+	max-height: 32px !important;
 	margin-top: 0px !important;
-	margin-bottom: -1px !important;
+	margin-bottom: -32px !important;
+	opacity: 0;
+	transition: all 0ms linear 0s !important;
+	z-index:  1 !important;
+}
+
+#nav-bar:hover:not([customizing="true"]) {
+	min-height: 32px !important;
+	max-height: 32px !important;
+	margin-top: 0px !important;
+	margin-bottom: -32px !important;
 	opacity: .5;
 	transition: all 0ms linear 0s !important;
-	z-index: -5 !important;
+	z-index:  5 !important;
 }
 
 #navigator-toolbox:hover:-moz-any(#nav-bar),
