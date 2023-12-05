@@ -74,7 +74,7 @@ findbar {
 }
 #navigator-toolbox > * {
   line-height: normal;
-  pointer-events: auto 
+  pointer-events: auto;
 
 }
 #navigator-toolbox,
@@ -89,8 +89,7 @@ findbar {
 
 }
 #TabsToolbar {
-  width: calc(100vw - var(--uc-navigationbar-width,0px)) 
-
+  width: calc(100vw - var(--uc-navigationbar-width,0px));
 }
 
 
