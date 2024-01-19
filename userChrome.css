@@ -225,7 +225,7 @@ html#main-window body toolbox#navigator-toolbox vbox#titlebar toolbar#TabsToolba
   position: relative !important;
   overflow-x: hidden !important;
   margin-right: calc(var(--sidebar-hover-width) * -1) !important;
-  //left: var(--sidebar-hover-width) !important;
+  /* left: var(--sidebar-hover-width) !important; */
   min-width: var(--sidebar-hover-width) !important;
   max-width: var(--sidebar-hover-width) !important;
   border-right: 0px solid var(--sidebar-border-color);
@@ -234,10 +234,10 @@ html#main-window body toolbox#navigator-toolbox vbox#titlebar toolbar#TabsToolba
 
 #sidebar-box:hover {
   margin-right: calc(var(--sidebar-visible-width) * -1) !important;
-  //left: var(--sidebar-hover-width) !important;
+  /*left: var(--sidebar-hover-width) !important; */
   min-width: var(--sidebar-visible-width) !important;
   max-width: var(--sidebar-visible-width) !important;
-  //display: none !important;
+  /*display: none !important; */
 }
 
 /*
