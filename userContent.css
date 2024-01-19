@@ -3,7 +3,12 @@
   text-align: left;
 }
 
-
+/*Changes color of selected text highlight in main body*/
+::selection {
+  /* This is the background color */
+  background-color: #f77fbe !important;
+  /* This is the text color */
+color: #ffffff !important}
 
 /* Mozilla Tweaks */
 @-moz-document
