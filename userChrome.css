@@ -217,8 +217,8 @@ html#main-window body toolbox#navigator-toolbox vbox#titlebar toolbar#TabsToolba
 /* To right-align the sidebar, replace all occurrences of "left" with "right", and "margin-right" with "margin-left" */
 
 :root {
-  --sidebar-hover-width: 200px;
-  --sidebar-visible-width: 200px;
+  --sidebar-hover-width: 400px;
+  --sidebar-visible-width: 400px;
 }
 
 #sidebar-box {

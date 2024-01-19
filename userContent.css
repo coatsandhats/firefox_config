@@ -1,5 +1,5 @@
 #tridactyl-reader > main {
-  width: 80vw !important;
+  width: 40vw !important;
   text-align: left;
 }
 
@@ -16,6 +16,10 @@ domain(addons.mozilla.org)
 		background-color: #1F1F1F !important;
 	}
 
+
+    .StaticAddonCard {
+        background: #242424 !important;
+    }
 
     .SearchResult-summary
 {
